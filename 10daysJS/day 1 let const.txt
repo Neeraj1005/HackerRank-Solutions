@@ -1,0 +1,15 @@
+Objective
+
+In this challenge, we practice declaring variables using the let and const keywords. Check out the attached tutorial for more details.
+
+
+
+    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+    const PI = Math.PI;
+    let r = readLine();
+    // Print the area of the circle:
+    let area;  
+    console.log(PI * (r * r));
+    // Print the perimeter of the circle:
+    let perimeter;  
+    console.log(2 * PI * r);
