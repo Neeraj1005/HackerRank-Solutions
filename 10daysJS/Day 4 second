@@ -1,0 +1,34 @@
+function getCount(objects) {
+    let counter = 0;
+    objects.forEach(function (o) {
+        if(o.x === o.y){
+            counter += 1;
+        }
+    });
+    return counter;
+}
+
+2nd method
+
+function getCount(objects) {
+    let counter = 0;
+    for(let o in objects){
+        if(objects[o].x === objects[o].y){
+            counter +=1;
+        }
+    }
+    return counter;
+}
+
+3rd method
+function getCount(objects) {
+    let counter = 0;
+
+    for(let i=0; i<objects.length;i++){
+        let current_obj = objects[i];
+        if(current_obj.x === current_obj.y){
+            counter += 1;
+        }
+    }
+    return counter;
+}
