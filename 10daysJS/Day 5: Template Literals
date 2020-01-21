@@ -1,0 +1,8 @@
+function sides(literals, ...expressions) {
+    let A = expressions[0];
+    let P = expressions[1];
+    let side1 = (P+Math.sqrt(P*P-16*A))/4;
+    let side2 = (P-Math.sqrt(P*P-16*A))/4;
+    return [side1,side2].sort();
+    // console.log(`The area is: ${side1.sort()} The perimeter is : ${side2.sort()}`); 
+}
