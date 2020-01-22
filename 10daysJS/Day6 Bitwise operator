@@ -1,0 +1,19 @@
+```
+Solution for all 
+https://medium.com/@mannycodes/10-days-of-javascript-in-1-article-a94565f215d2
+```
+function getMaxLessThanK(n, k) {
+     let largest = 0;
+     for (let a = 1; a <= n; a++) {
+          for (let b = a + 1; b<= n; b++) {
+               let ab = (a&b); // get the value of a&b
+               
+               // confirm that ab < k
+               // if greater than the largest, redefine largest
+               if (ab < k && ab > largest) {
+                    largest = ab;
+               }    
+          }  
+     } 
+     return largest;
+}
